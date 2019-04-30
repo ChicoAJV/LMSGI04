@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category> 
+	  <pattern>Hola</pattern>
+	    <template>Hola, bienvenido a Turismo Balear</template>
+	</category>
+	<category>
+	  <pattern>Cuéntame sobre las Islas Baleares</pattern>
+	    <template>Aquí encontrarás información sobre..<star/>.
+	       <button>
+	           <text>Clica en el siguiente enlace</text>
+	             <url>https://es.wikipedia.org/wiki/Islas_Baleares</url>
+	       </button>
+	    </template>
+	</category>
+	<category>
+	    <pattern>enseñame un mapa de las Islas Baleares</pattern>
+	      <template>Para ver un mapa sobre las Islas Baleares pega el siguiente enlace en tu navegador<star/>.
+	          <button>
+	               <url>https://www.google.com/maps/place/Islas+Baleares/@39.3555213,1.6144068,8z/data=!3m1!4b1!4m5!3m4!1s0x1297bbfff404864b:0xd5896ba9c72db2c4!8m2!3d39.3587759!4d2.7356328</url>
+	          </button>
+	      </template>
+	</category>
+	<category>
+	    <pattern> muy bien, veo que son cuatro islas</pattern>
+	       <template>correcto, las dos de la izquierda forman las pitiusas, Ibiza la grande y Formentera la pequeña</template>.
+	</category>
+	<category>
+	    <pattern>Formentera parece un zapato de tacón jejeje</pattern>
+	       <template> jajaja si, me recuerda a Italia que también parece una bota con tacón</template>
+	</category>
+	<category>
+	    <pattern>jejeje cierto, y ¿como se llama la mas grande?</pattern>
+	    <template>se llama mallorca</template>
+    </category>
+</aiml>
