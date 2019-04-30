@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category> 
+	  <pattern>Hola</pattern> 
+	    <template>Hola, bienvenido a Turismo Balear</template>
+	</category>
+	<category>
+	  <pattern>Cuéntame sobre las Islas Baleares</pattern>
+	    <template>Aquí encontrarás información sobre..<star/>.
+	       <button>
+	           <text>Clica en el siguiente enlace</text>
+	             <url>https://es.wikipedia.org/wiki/Islas_Baleares</url>
+	       </button>
+	    </template>
+	</category>
+	<category>
+	    <pattern>enseñame un mapa de las Islas Baleares</pattern>
+	      <template>Para ver un mapa sobre las Islas Baleares..<star/>.
+	          <button>
+	              <text>clica el enlace o pega el siguiente enlace en tu navegador..</text>
+	               <url>https://www.google.com/maps/place/Islas+Baleares/@39.3555213,1.6144068,8z/data=!3m1!4b1!4m5!3m4!1s0x1297bbfff404864b:0xd5896ba9c72db2c4!8m2!3d39.3587759!4d2.7356328</url>
+	          </button>
+	      </template>
+	</category>
+	<category>
+	    <pattern> muy bien, veo que son cuatro islas</pattern>
+	       <template>correcto, por orden de tamañao son: Mallorca, Menorca, Ibiza y Formentera</template>.
+	</category>
+	<category>
+	    <pattern>Que lengua o lenguas se hablan</pattern>
+	       <template> las lenguas oficiales son el castellano y el catalán</template>
+	</category>
+	<category>
+	    <pattern>cual es la capital</pattern>
+	       <template>Palma de Mallorca</template>
+    </category>
+    <category>
+        <pattern> enseñame un video de las baleares</pattern>
+           <template>pulsa en el el siguiente enlace o pegalo en tu navegador..<star/>.
+             <button>
+                 <text>clica el enlace o pega el siguiente enlace en tu navegador..</text>
+                  <url>https://www.youtube.com/watch?v=ZT59cGmg9ZM</url>
+             </button>
+        </template>
+    </category>
+    <category>
+        <pattern>*</pattern>
+           <template>
+               <random>
+                   <li>no te entiendo.</li>
+                   <li>vuelve a escribirme la pregunta.</li>
+               </random>
+           </template>
+    </category>
+    <category>
+        <pattern> que epoca es la mejor para viajar a Baleares</pattern>
+          <template> la mejor epoca es verano, así podrás disfrutar de las playas, del senderismo, además es cuando están más vivas</template>
+    </category>
+    <category>
+        <pattern>y en invierno</pattern>
+          <template>en invierno puedes ir de relax, por ejemplo Mallorca</template>
+    </category>
+    <category>
+        <pattern> avión o barco</pattern>
+           <template>las dos formas,te dejo un enlace para el barco..<star/>
+             <button>
+                 <text>clica en el siguiente enlace</text>
+                  <url>https://www.balearia.com/es</url>
+             </button>
+          </template>
+    </category>
+    <category>
+       <pattern> y el avión</pattern>
+           <template>las dos formas,te dejo un enlace para el avión..<star/>
+             <button>
+                 <text>clica en el siguiente enlace</text>
+                  <url>https://www.iberia.com/es/</url>
+             </button>
+          </template>
+    </category>
+     <category>
+        <pattern>cuentame sobre</pattern>
+          <template>
+              <condition name="sobre">
+                  <li value="*"><srai>cuentame <get name="sobre"/></srai></li>
+                  <li> cuentame de que</li>
+              </condition>
+          </template>
+    </category>
+    <category>
+        <pattern>muchas gracias por la informacion, hasta pronto</pattern>
+          <template> de nada, espero que te haya servido de ayuda, nos vemos😀</template>
+    </category>
+</aiml>
